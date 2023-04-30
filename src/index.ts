@@ -1,10 +1,33 @@
-const _base_milisecond = 1000;
+import { EazyTimeConfigStructure, EazyTimeStructure } from "./types";
+import { GenerateConverters, GenerateMin, GenerateMs, GenerateSec } from "./utils";
 
+const CustomEazyTime = (Config:EazyTimeConfigStructure) : EazyTimeStructure =>{
+    const MS = GenerateMs(Config);
+    const SEC = GenerateSec(Config);
+    const MIN = GenerateMin(Config);
+    const Converters = GenerateConverters(Config);
 
-const Time = {
-    OneSec: _base_milisecond * 1
+    return {
+        ...Config,
+        ...MS,
+        ...SEC,
+        ...MIN,
+        ...Converters,
+    };
 }
+
+const ms = 1;
+const DefaultConfig : EazyTimeConfigStructure = {
+    BASE_MS: ms,
+    BASE_SEC: ms * 1000,
+    BASE_MIN: ms * 1000 * 60,
+    BASE_HOUR: ms * 1000 * 60 * 60,
+    BASE_DAY: ms * 1000 * 60 * 60 * 24,
+}
+
+const EazyTime: EazyTimeStructure = CustomEazyTime(DefaultConfig);
 
 export {
-    Time,
+    CustomEazyTime,
 }
+export default EazyTime;
