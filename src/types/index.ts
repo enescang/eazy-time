@@ -37,6 +37,19 @@ type MinStructure = {
     readonly TenMin: number,
 }
 
+type HourStructure = {
+    readonly OneHour: number,
+    readonly TwoHour: number,
+    readonly ThreeHour: number,
+    readonly FourHour: number,
+    readonly FiveHour: number,
+    readonly SixHour: number,
+    readonly SevenHour: number,
+    readonly EightHour: number,
+    readonly NineHour:number,
+    readonly TenHour: number,
+}
+
 type EazyTimeConfigStructure = {
     BASE_MS :number,
     BASE_SEC :number,
@@ -49,15 +62,17 @@ type EazyTimeConverterStructure = {
     readonly Ms: (ms:number) => number,
     readonly Sec: (sec: number) => number,
     readonly Min: (min:number) => number,
+    readonly Hour: (min:number) => number,
 };
 
-type EazyTimeStaticFieldStructure = MsStructure & SecStructure & MinStructure;
+type EazyTimeStaticFieldStructure = MsStructure & SecStructure & MinStructure & HourStructure;
 type EazyTimeStructure = EazyTimeConfigStructure & EazyTimeStaticFieldStructure & EazyTimeConverterStructure;
 
 export {
     MsStructure,
     SecStructure,
     MinStructure,
+    HourStructure,
 
     EazyTimeConfigStructure,
     EazyTimeConverterStructure,
