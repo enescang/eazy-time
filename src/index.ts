@@ -1,10 +1,11 @@
 import { EazyTimeConfigStructure, EazyTimeStructure } from "./types";
-import { GenerateConverters, GenerateMin, GenerateMs, GenerateSec } from "./utils";
+import { GenerateConverters, GenerateHour, GenerateMin, GenerateMs, GenerateSec } from "./utils";
 
 const CustomEazyTime = (Config:EazyTimeConfigStructure) : EazyTimeStructure =>{
     const MS = GenerateMs(Config);
     const SEC = GenerateSec(Config);
     const MIN = GenerateMin(Config);
+    const HOUR = GenerateHour(Config);
     const Converters = GenerateConverters(Config);
 
     return {
@@ -12,6 +13,8 @@ const CustomEazyTime = (Config:EazyTimeConfigStructure) : EazyTimeStructure =>{
         ...MS,
         ...SEC,
         ...MIN,
+        ...HOUR,
+
         ...Converters,
     };
 }

@@ -1,4 +1,4 @@
-import { EazyTimeConfigStructure, EazyTimeConverterStructure, EazyTimeStaticFieldStructure, MinStructure, MsStructure, SecStructure } from "../types"
+import { EazyTimeConfigStructure, EazyTimeConverterStructure, EazyTimeStaticFieldStructure, HourStructure, MinStructure, MsStructure, SecStructure } from "../types"
 
 const GenerateMs = (config: EazyTimeConfigStructure) :MsStructure =>{
     return {
@@ -45,6 +45,21 @@ const GenerateMin = (config: EazyTimeConfigStructure) : MinStructure=>{
     }
 }
 
+const GenerateHour = (config: EazyTimeConfigStructure) : HourStructure=>{
+    return {
+        OneHour: config.BASE_HOUR * 1,
+        TwoHour: config.BASE_HOUR * 2,
+        ThreeHour: config.BASE_HOUR * 3,
+        FourHour: config.BASE_HOUR * 4,
+        FiveHour: config.BASE_HOUR * 5,
+        SixHour: config.BASE_HOUR * 6,
+        SevenHour: config.BASE_HOUR * 7,
+        EightHour: config.BASE_HOUR * 8,
+        NineHour: config.BASE_HOUR * 9,
+        TenHour: config.BASE_HOUR * 10,
+    }
+}
+
 const GenerateConverters = (config: EazyTimeConfigStructure): EazyTimeConverterStructure => {
     const Ms = (ms: number): number => {
         return config.BASE_MS * ms;
@@ -56,10 +71,15 @@ const GenerateConverters = (config: EazyTimeConfigStructure): EazyTimeConverterS
         return config.BASE_MIN * min;
     }
 
+    const Hour = (hour: number): number => {
+        return config.BASE_HOUR * hour;
+    }
+
     return {
         Ms,
         Sec,
-        Min
+        Min,
+        Hour,
     }
 }
 
@@ -67,5 +87,7 @@ export {
     GenerateMs,
     GenerateSec,
     GenerateMin,
+    GenerateHour,
+
     GenerateConverters,
 }
