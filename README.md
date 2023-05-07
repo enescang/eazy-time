@@ -1,4 +1,4 @@
-Eazy Time (Not Completed Yet)
+Eazy Time
 --
 
 ## ⏳ Getting Started
@@ -42,13 +42,102 @@ const ms = EazyTime.Ms(120);
 #### Static Fields Table
 |Property                  | Value  | Test   |
 |--------------------------|--------|--------|
-|OneMs|1| X
-|TwoMs|2| X
-|ThreeMs|3| X
-|FourMs|4| X
-|FiveMs|5| X
-|SixMs|6| X
-|SevenMs|7| X
-|EightMs|8| X
-|NineMs|9| X
-|TenMs|10| X
+|OneMs|1| ❌
+|TwoMs|2| ❌
+|ThreeMs|3| ❌
+|FourMs|4| ❌
+|FiveMs|5| ❌
+|SixMs|6| ❌
+|SevenMs|7| ❌
+|EightMs|8| ❌
+|NineMs|9| ❌
+|TenMs|10| ❌
+
+### Sec
+#### Generator
+```js
+const sec = EazyTime.Sec(45);
+```
+
+#### Static Fields Table
+|Property                  | Value  | Test   |
+|--------------------------|--------|--------|
+|OneSec    |1000   |❌
+|TwoSec    |2000   |❌
+|ThreeSec    |3000   |❌
+|FourSec    |4000   |❌
+|FiveSec    |5000   |❌
+|SixSec    |6000   |❌
+|SevenSec    |7000   |❌
+|EightSec    |8000   |❌
+|NineSec    |9000   |❌
+|TenSec    |10000   |❌
+
+### Min
+#### Generator
+```js
+const min = EazyTime.Min(90);
+```
+
+#### Static Fields Table
+|Property                  | Value  | Test   |
+|--------------------------|--------|--------|
+|OneMin    |60000   |❌
+|TwoMin    |120000   |❌
+|ThreeMin    |180000   |❌
+|FourMin    |240000   |❌
+|FiveMin    |300000   |❌
+|SixMin    |360000   |❌
+|SevenMin    |420000   |❌
+|EightMin    |480000   |❌
+|NineMin    |540000   |❌
+|TenMin    |600000   |❌
+
+### Hour
+#### Generator
+```js
+const hour = EazyTime.Hour(36);
+```
+
+#### Static Fields Table
+|Property                  | Value  | Test   |
+|--------------------------|--------|--------|
+|OneHour    |3600000   |🧪
+|TwoHour    |7200000   |🧪
+|ThreeHour    |10800000   |🧪
+|FourHour    |14400000   |🧪
+|FiveHour    |18000000   |🧪
+|SixHour    |21600000   |🧪
+|SevenHour    |25200000   |🧪
+|EightHour    |28800000   |🧪
+|NineHour    |32400000   |🧪
+|TenHour    |36000000   |🧪
+
+### Day
+#### Generator
+```js
+const day = EazyTime.Day(9);
+```
+
+#### Static Fields Table
+|Property                  | Value  | Test   |
+|--------------------------|--------|--------|
+|OneDay    |86400000   |🧪
+|TwoDay    |172800000   |🧪
+|ThreeDay    |259200000   |🧪
+|FourDay    |345600000   |🧪
+|FiveDay    |432000000   |🧪
+|SixDay    |518400000   |🧪
+|SevenDay    |604800000   |🧪
+|EightDay    |691200000   |🧪
+|NineDay    |777600000   |🧪
+|TenDay    |864000000   |🧪
+
+## Todo
+| Task                     	| Status 	|
+|--------------------------	|--------	|
+| Write test cases for MS  	| ⏱️      	|
+| Write test cases for Sec 	| ⏱️      	|
+| Write test cases for Min 	| ⏱️      	|
+| Create "Contribute" file 	| ⏱️      	|
+| Add license              	| ✅    	   |
