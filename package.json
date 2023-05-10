@@ -1,9 +1,9 @@
 {
   "name": "eazy-time",
-  "version": "1.0.1",
+  "version": "2.0.0",
   "description": "Simplified way to get the 'time'.",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "main": "dist/src/index.js",
+  "types": "dist/src/index.d.ts",
   "scripts": {
     "test": "jest",
     "build": "tsc"
@@ -12,7 +12,10 @@
     "type": "git",
     "url": "git+https://github.com/enescang/eazy-time.git"
   },
-  "keywords": ["timestamp","oneday as timestamp"],
+  "keywords": [
+    "timestamp",
+    "oneday as timestamp"
+  ],
   "author": "",
   "license": "MIT",
   "bugs": {
