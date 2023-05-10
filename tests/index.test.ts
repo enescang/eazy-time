@@ -1,4 +1,4 @@
-import EazyTime, { CustomEazyTime } from "../src";
+import { CustomEazyTime } from "../src/custom";
 import { EazyTimeConfigStructure, EazyTimeStructure } from "../src/types";
 
 const ms = 1;
