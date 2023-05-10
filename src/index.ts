@@ -11,4 +11,4 @@ const DefaultConfig : EazyTimeConfigStructure = {
 }
 
 const EazyTime: EazyTimeStructure = CustomEazyTime(DefaultConfig);
-export default EazyTime;
+export = EazyTime;
