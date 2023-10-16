@@ -1,6 +1,6 @@
 {
   "name": "eazy-time",
-  "version": "2.0.2",
+  "version": "2.0.3",
   "description": "Simplified way to get the 'time'.",
   "main": "dist/src/index.js",
   "types": "dist/src/index.d.ts",
