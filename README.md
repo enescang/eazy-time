@@ -42,16 +42,16 @@ const ms = EazyTime.Ms(120);
 #### Static Fields Table
 |Property                  | Value  | Test   |
 |--------------------------|--------|--------|
-|OneMs|1| ❌
-|TwoMs|2| ❌
-|ThreeMs|3| ❌
-|FourMs|4| ❌
-|FiveMs|5| ❌
-|SixMs|6| ❌
-|SevenMs|7| ❌
-|EightMs|8| ❌
-|NineMs|9| ❌
-|TenMs|10| ❌
+|OneMs|1| 🧪
+|TwoMs|2| 🧪
+|ThreeMs|3| 🧪
+|FourMs|4| 🧪
+|FiveMs|5| 🧪
+|SixMs|6| 🧪
+|SevenMs|7| 🧪
+|EightMs|8| 🧪
+|NineMs|9| 🧪
+|TenMs|10| 🧪
 
 ### Sec
 #### Generator
@@ -62,16 +62,16 @@ const sec = EazyTime.Sec(45);
 #### Static Fields Table
 |Property                  | Value  | Test   |
 |--------------------------|--------|--------|
-|OneSec    |1000   |❌
-|TwoSec    |2000   |❌
-|ThreeSec    |3000   |❌
-|FourSec    |4000   |❌
-|FiveSec    |5000   |❌
-|SixSec    |6000   |❌
-|SevenSec    |7000   |❌
-|EightSec    |8000   |❌
-|NineSec    |9000   |❌
-|TenSec    |10000   |❌
+|OneSec    |1000   |🧪
+|TwoSec    |2000   |🧪
+|ThreeSec    |3000   |🧪
+|FourSec    |4000   |🧪
+|FiveSec    |5000   |🧪
+|SixSec    |6000   |🧪
+|SevenSec    |7000   |🧪
+|EightSec    |8000   |🧪
+|NineSec    |9000   |🧪
+|TenSec    |10000   |🧪
 
 ### Min
 #### Generator
@@ -82,16 +82,16 @@ const min = EazyTime.Min(90);
 #### Static Fields Table
 |Property                  | Value  | Test   |
 |--------------------------|--------|--------|
-|OneMin    |60000   |❌
-|TwoMin    |120000   |❌
-|ThreeMin    |180000   |❌
-|FourMin    |240000   |❌
-|FiveMin    |300000   |❌
-|SixMin    |360000   |❌
-|SevenMin    |420000   |❌
-|EightMin    |480000   |❌
-|NineMin    |540000   |❌
-|TenMin    |600000   |❌
+|OneMin    |60000   |🧪
+|TwoMin    |120000   |🧪
+|ThreeMin    |180000   |🧪
+|FourMin    |240000   |🧪
+|FiveMin    |300000   |🧪
+|SixMin    |360000   |🧪
+|SevenMin    |420000   |🧪
+|EightMin    |480000   |🧪
+|NineMin    |540000   |🧪
+|TenMin    |600000   |🧪
 
 ### Hour
 #### Generator
@@ -136,8 +136,8 @@ const day = EazyTime.Day(9);
 ## Todo
 | Task                     	| Status 	|
 |--------------------------	|--------	|
-| Write test cases for MS  	| ⏱️      	|
-| Write test cases for Sec 	| ⏱️      	|
-| Write test cases for Min 	| ⏱️      	|
+| Write test cases for MS  	| ✅        |
+| Write test cases for Sec 	| ✅        |
+| Write test cases for Min 	| ✅        |
 | Create "Contribute" file 	| ⏱️      	|
 | Add license              	| ✅    	   |
